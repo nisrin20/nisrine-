@@ -1,0 +1,449 @@
+/* to select all element on wp
+reset  margins, padding, and apply box-sizing */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Apply smooth scrolling effect */
+  html {
+    scroll-behavior: smooth;
+  }
+  /* Font for the body: Quicksand */
+  body {
+    font-family: "Quicksand", sans-serif;
+  }
+   /* Removes underline and set texr colror*/
+  a {
+    text-decoration: none;
+    color: #0f573f;
+  }
+  /* List Style Removal */
+  ul {
+    list-style: none;
+  }
+  /* Center container */
+  .container {
+    max-width: 1100px;
+    margin: auto;
+  }
+  /* Button styles ,p space between elem border*/
+  .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    }
+  /* Define primary button style discover now */
+  .btn-primary {
+    border: 1px solid #fff;
+  }
+  /* Secondary button and hover effect bk col more aboutus */
+  .btn-secondary,
+  .btn-third:hover {
+    background: #5f817b;
+    color: #ffffff;
+  }
+  /* Primary button hover effect and backgr col*/
+  .btn-primary:hover,
+  .btn-secondary:hover,
+  .btn-third {
+    background: #18915b;
+  }
+  /* Primary text color the be*/
+  .primary-text {
+    color: #217d40;
+  }
+
+
+
+
+
+  /* Header Start */
+
+     
+  /* sets the header's height to occupy the full viewport height. */  
+  header {
+    height: 100vh;
+    background: url("bg.jpg") center center/cover no-repeat;
+   }
+  /* navbar styling ,center in nav*/
+  #navbar {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    
+  }
+  /* Navbar logo */
+  #navbar img {
+    width: 100px;
+    margin-left: 100px;
+  }
+  /* Navbar navigation links
+  styles the unordered list inside the navig area as a flex container */
+  nav ul {
+    display: flex;
+    margin-right: 100px;
+  }
+  nav ul li a {
+    padding: 15px 20px;
+    font-weight: 600;
+  }
+   /*  line under the nav item when move hover*/
+  nav ul li a:hover {
+    border-bottom: 2px solid #37794d;
+  }
+  /* Fixed position for the navbar when scrolled */
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* Change the background color as needed */
+   /* Set a higher z-index to make sure it appears above other content */
+   z-index: 1000;
+}
+
+  /* Header content styles */
+  header .content {
+    display: flex;
+    justify-content: center;
+    height: 75%;
+   /* center botton discover now */
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  /* home  effect for header covring the header comtent */
+  header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.208);
+  }
+  header .content h1 {
+    font-size: 40px;
+    color: #fff;
+  }
+  header .content p {
+    color: #ffffff;
+    margin: 20px 0 40px;
+  }
+/* appear p above elements inside the header */
+header * {
+  z-index: 10;
+}
+/* Header End */
+  
+  
+  
+  
+/* About Start */
+
+#about {
+  /* styles for the about section */
+ background: #f4f4f4;
+ /* Adjust padding betwe nav-Q */
+  padding: 4rem 0; 
+}
+ /* center title text  */
+#about .title,
+#special .title,
+#catalogue .title {
+  text-align: center;
+  }
+  /* Styling for the container our spe */
+#about h2,
+#special h2,
+#catalogue h2 {
+  font-size: 40px;
+  
+/* Adjust padding qu */
+  padding: 20px 200px; 
+}
+/* text color and background*/
+#about h2 {
+  color: #383848;
+  background: url("bg.jpg") center center/cover no-repeat;
+}
+/* style title lin ytang*/
+#about .title p {
+  font-weight: 600;
+  font-size: 14px;
+  color: #9a9a9a;
+  /* space betwen title text */
+  margin-bottom: 2rem; 
+}
+
+#about .about-content {
+  display: flex;
+  /* Align items in a column */
+  flex-direction: column;
+  /* Center align items */ 
+  align-items: center; 
+  /* Center align text */
+  text-align: center; 
+  /* Adjust margin betwe nav-Q */
+  margin-top: 2rem; 
+}
+
+#about .about-content p {
+  /*  */
+  margin-bottom: 1rem; 
+   /* space betw line */
+  line-height: 1.6;
+  color: #9a9a9a;
+  font-weight: 500;
+}
+
+#moreAboutInfo {
+  padding: 20px;
+  /* Adjust margin as needed */
+  margin-bottom: 20px; 
+  text-align: center;
+  font-size: 16px;
+  color: #9a9a9a;
+ }
+ 
+ #moreAboutInfo p {
+  /* space betw line in more*/
+  line-height: 1.6;
+}
+/* About End */
+
+
+
+
+/* special Section start */
+  #special {
+    height:65vh;
+    background-color: hsl(0, 0%, 100%); 
+    display: flex;
+    }
+    
+    /* style our special tea */
+  #special h2 {
+    color: #383848;
+     background: url("bg.jpg") center center/cover no-repeat;
+  }
+/* Centers offer items within the container */
+  #special .special-items {
+    display: flex;
+   text-align: center;
+  }
+  
+  /* H3 styles in special items sweet rc .. */
+  #special .special-items h3 {
+    font-size: 25px;
+    color: #0f573f;
+    margin: 15px 0;
+  }
+  #special .special-items p {
+    color: #0f573f;
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+  /*zoom when mouse over item */
+  #special .special-items img {
+    width: 200px;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  #special .special-items img:hover {
+    /* zoom the image by 10% on move  */
+    transform: scale(1.1); 
+  }
+
+/* special Section end */
+
+
+
+  
+/* catalogue Section Start */
+
+  /* Styles for the title of the catalogue section */
+  .catalogue{
+    margin: 2rem 0;
+}
+.catalogue-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.catalogue-head{ 
+  background:#96eca42c ;
+  text-align: center;
+}
+.catalogue-head q{  
+    color: #1A8B9D;
+    font-style:italic;
+    font-size: 2.6rem;
+}
+.catalogue-head p{
+    font-weight: 3000;
+    padding: 1.8rem 0;
+    color: #56361e;
+    font-style:italic;
+}
+.catalogue-btns{ 
+    padding: 2.6rem 0;
+    display: flex;
+    justify-content: center;
+}
+.catalogue-btn{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    color: #166022;
+    display: block;
+    margin: 0 1rem;
+}
+/* undeline uder bnt+ efect*/
+.catalogue-btn::after{
+    content: "";
+    display: block;
+    height: 7px;
+    background:#166022 ;
+    margin-top: 0.5rem;
+    width: 0;
+    transition: width 0.4s ease-out;
+}
+/* size undeline*/
+.catalogue-btn:hover::after{
+    width: 60%;
+}
+/* color the active btn*/
+.active-btn{
+    color:#1A8B9D;;
+}
+/* sp betw the botton and item*/
+.tea-items{
+    margin: 2rem 0;
+}
+/* style price and categ*/
+.tea-item{
+    color: #000000;
+    margin: 0.6rem 0;
+}
+/* padding btw item*/
+.tea-content{
+    padding: 1rem;
+}
+.tea-name{
+   
+    color: #4F6F52;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.line{
+    width: 100px;
+    height: 3px;
+    background: #4F6F52;
+}
+.tea-price{
+    padding: 0.4rem 0;
+   font-size: 1.4rem;
+    }
+.category{
+    padding-top: 0.2rem;
+    font-size: 1rem;
+    font-weight: 800;
+    }
+.category span{
+    font-weight: 500;
+}
+.tea-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+  /* Adjust the width of the images to fit the container */
+  .tea-items img {
+    max-width: 40%; 
+   
+  }
+  
+/* catalogue Section End */
+  
+  
+  
+  
+  
+  
+  /* Contact Section start */
+
+  /* Set background and padding for the contact section */
+  #contact {
+   
+    background: url(pexels-eva-bronzini-6585039.jpg)center center/cover no-repeat;
+    padding: 8rem 0;
+  }
+  /* Setform container */
+  #contact .container {
+    max-width: 900px;
+  }
+  /* Arrange contact content using flexbox */
+  #contact .contact-content {
+    display: flex;
+    }
+  /* Styles for the contact information section */
+  #contact .contact-info {
+    width: 50%;
+  }
+  #contact .contact-info div {
+    margin: 30px 0;
+    line-height: 1.7;
+  }
+  #contact .contact-info h3 {
+    font-size: 28px;
+    color: #089a6c;
+    margin-bottom: 10px;
+  }
+  /* Styles for the contact form */
+  form {
+    width: 50%;
+  }
+  form input,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: #c5b9aaa4;
+  }
+  form input:focus,
+  textarea:focus {
+    outline: none;
+  }
+  form button {
+    color: #000000;
+  }
+  
+  /* Contact Section End */
+  /* Footer Start */
+  /* Set background color, text alignment, and text color for the footer */
+  #footer {
+    background-color: #3838486e;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+  }
+  /* Footer End */
+  
